@@ -21,6 +21,7 @@ public class Car {
     
     
     public void printVariables() {
+        System.out.println("------------------------------");
         System.out.println("Maksimalna brzina: " + maxSpeed);
         System.out.println("Minimalna brzina: " + minSpeed);
         System.out.println("Težina: "  + weight);
@@ -39,6 +40,14 @@ public class Car {
     public void changeWeight() {
         weight = 1050;
     }
+    
+    public void changeIsTheCarOn() {
+        isTheCarOn = true;
+    }
+    
+    public void changeCondition() {
+        condition = 'B';
+    }
     /**
      * @param args the command line arguments
      */
@@ -50,7 +59,9 @@ public class Car {
         myCar.changeMinSpeed();
         myCar.printVariables();
         myCar.changeWeight();
-
+        myCar.changeIsTheCarOn();
+        myCar.changeCondition();
+        myCar.printVariables();
     }
     
 }
